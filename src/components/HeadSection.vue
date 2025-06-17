@@ -11,8 +11,11 @@
                 <h1 class="text-center text-gray-500 text-[28px] ">
                     Web Developer
                 </h1> <br />
-                <div class="border border-yellow-300 text-yellow-300 p-2 w-[9rem] text-center mx-auto">
-                    HIRE ME 
+                <div class="border border-yellow-300 text-yellow-300 p-2 w-[9rem] text-center mx-auto cursor-pointer">
+                    <a :href="linkedinLink" >
+                        HIRE ME 
+                    </a>
+                  
                 </div>
             </div>
             <div class="bg-black ">
@@ -38,7 +41,13 @@ export default {
         return {
             bannerImg: banner
         }
+    },
+    computed:{
+        linkedinLink() {
+            return 'https://www.linkedin.com/in/ghizlane-el-garmah-b357421b6';
+        },
     }
+
 }
 </script>
 <style></style>

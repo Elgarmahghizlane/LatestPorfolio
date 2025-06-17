@@ -6,7 +6,7 @@
                 <h1 class="text-white font-bold text-base md:pt-0 pt-4">Creative Idea</h1>
             </div>
             <div class="hidden md:flex justify-between md:gap-8">
-                <h1 class="text-yellow-300 uppercase font-bold text-sm cursor-pointer" v-for="(m, i) in menu" :key="i"
+                <h1 class=" text-white hover:text-yellow-300 uppercase font-bold text-sm cursor-pointer" v-for="(m, i) in menu" :key="i"
                     @click="handleMenuItemClick(m.ref)">
                     {{ m.name }}
                 </h1>
